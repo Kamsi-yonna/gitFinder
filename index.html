@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" type="image/jpg" href="images/github logo.png" />
+
+    <title>Profile Card Box</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <container class="container">
+      <div class="formContainer">
+        <div class="header">
+          <img src="images/github logo.png" alt="github logo" id="logo" />
+          <h1>Github Finder</h1>
+        </div>
+
+        <form id="form">
+          <input
+            type="text"
+            name="username"
+            id="name-input"
+            placeholder="Enter a github username"
+            required
+          />
+          <br />
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="card hidden">
+        <div class="img-box">
+          <img class="profile-img" id="avatar" />
+        </div>
+
+        <div class="container">
+          <div class="details">
+            <h2 id="username"><br /><span></span></h2>
+
+            <div class="data">
+              <div id="repos">
+                <h3>45</h3>
+                <p>Repositories</p>
+              </div>
+              <div id="followers">
+                <h3>12</h3>
+                <p>Followers</p>
+              </div>
+              <div id="following">
+                <h3>23</h3>
+                <p>Following</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button>Follow</button> -->
+      <div class="not-found hidden">
+        <h3>USER NOT FOUND</h3>
+      </div>
+    </container>
+    <script src="script.js"></script>
+  </body>
+</html>
